@@ -1,5 +1,82 @@
+.navigation-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .logo {
-	background-image: url("Creativia.png");
-	width: 120px;
-	height: 23px;
+	position: relative;
+	// background-image: url("Creativia.png");
+	display: block;
+	width: 251px;
+	height: 42px;
+	// z-index: 2;
+	border-left: 2px solid #ff0036;
+	border-right: 2px solid #ff0036;
+	background-color: #131313;
+	cursor: pointer;
+
+	&:before {
+		position: absolute;
+		bottom: -53px;
+		right: 133px;
+		content: "";
+		width: 92px;
+		height: 100px;
+		border-left: 2px solid #ff0036;
+		background-color: #131313;
+		transform: rotate(-45deg);
+		// z-index: 3;
+	}
+
+	&:after {
+		position: absolute;
+		bottom: -53px;
+		left: 133px;
+		content: "";
+		width: 92px;
+		height: 100px;
+		border-right: 2px solid #ff0036;
+		background-color: #131313;
+		transform: rotate(45deg);
+		// z-index: 4;
+	}
+}
+
+.logo-title {
+	position: absolute;
+	left: 65px;
+	top: 46px;
+	z-index: 4;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.navigation__item {
+	margin-right: 35px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.navigation__link {
+	font-size:18px;
+	font-family: 'Raleway', sans-serif;
+	color: #a4a4a4;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	transition: 0.25s ease-in;
+	
+	&:hover,
+	&:active,
+	&:focus {
+		color: #fff;
+	}
 }
