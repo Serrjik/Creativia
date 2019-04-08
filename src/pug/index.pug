@@ -1,7 +1,20 @@
-include pages/_navigation.pug
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Creativia
 
-//- Raleway - regular, medium, semibold, bold
-//- Lato  - light, regular, bold, black
-//- MgOpenModata - regular
+	link(rel="stylesheet", href="fonts/lato/stylesheet.css")
+	link(rel="stylesheet", href="fonts/raleway/stylesheet.css")
+	link(rel="stylesheet", href="fonts/mg-open-modata/stylesheet.css")
+	link(rel="stylesheet", href="libs/normalize-css/normalize.css")
+	link(rel="stylesheet", href="libs/bootstrap-4-grid/grid.min.css")
+	link(rel="stylesheet", href="css/main.css")
+body
+	//- Raleway - regular, medium, semibold, bold
+	//- Lato  - light, regular, bold, black
+	//- MgOpenModata - regular
 
-h1 Creativia
+	include blocks/_header.pug
+
+	h1 Creativia
