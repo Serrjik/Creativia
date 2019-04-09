@@ -6,11 +6,9 @@
 
 .logo {
 	position: relative;
-	// background-image: url("Creativia.png");
 	display: block;
 	width: 251px;
 	height: 42px;
-	// z-index: 2;
 	border-left: 2px solid #ff0036;
 	border-right: 2px solid #ff0036;
 	background-color: #131313;
@@ -26,7 +24,6 @@
 		border-left: 2px solid #ff0036;
 		background-color: #131313;
 		transform: rotate(-45deg);
-		// z-index: 3;
 	}
 
 	&:after {
@@ -39,36 +36,94 @@
 		border-right: 2px solid #ff0036;
 		background-color: #131313;
 		transform: rotate(45deg);
-		// z-index: 4;
 	}
 }
 
-.logo-title {
+.logo__title {
 	position: absolute;
 	left: 65px;
-	top: 46px;
-	z-index: 4;
+	top: 40px;
+	z-index: 5;
+	
+	&:after {
+		position: absolute;
+		bottom: -50px;
+		left: 4px;
+		display: block;
+		content: "";
+		width: 107px;
+		height: 100px;
+		border-bottom: 2px solid #ff0036;
+		background-color: #131313;
+		z-index: -4;
+	}
+}
+
+.logo-image {
 }
 
 .navigation {
 	display: flex;
 	flex-direction: row;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 24px;
+	padding-bottom: 26px;
 	list-style-type: none;
 	cursor: pointer;
 }
 
 .navigation__item {
+	position: relative;
 	margin-right: 35px;
+	transition: 0.25s ease-in;
 	
 	&:last-child {
 		margin-right: 0;
 	}
+
+	&:before {
+		position: absolute;
+		left: 50%;
+		top: -23px;
+		width: 27px;
+		height: 3px;
+		content: "";
+		background-color: transparent;
+		transform: translate(-50%);
+		transition: 0.25s ease-in;
+	}
+
+	&:after {
+		position: absolute;
+		left: 50%;
+		bottom: -21px;
+		width: 27px;
+		height: 3px;
+		content: "";
+		background-color: transparent;
+		transform: translate(-50%);
+		transition: 0.25s ease-in;
+	}
 }
+
+.navigation__item:hover,
+.navigation__item:focus {
+
+	&:before {
+		background-color: #ff0036;
+	}
+
+	&:after {
+		background-color: #ff0036;
+	}
+} 
 
 .navigation__link {
 	font-size:18px;
 	font-family: 'Raleway', sans-serif;
 	color: #a4a4a4;
+	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 1.2;
 	text-align: center;
