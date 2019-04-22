@@ -71,6 +71,10 @@ p {
 	padding-right: 0;
 }
 
+.mb-110 {
+	margin-bottom: 110px;
+}
+
 .title {
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
@@ -105,4 +109,26 @@ p {
 
 .button--black {
 	background-color: #131313;
+}
+
+.scrollbar {
+	position: relative;
+	width: 515px;
+	height: 1px;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-left: auto;
+	background-color: #262626;
+	
+	&:before {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		content: url('../img/icons/hexagon.svg');
+		width: 21px;
+		height: 19px;
+		
+	}
 }
