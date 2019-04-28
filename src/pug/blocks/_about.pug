@@ -22,8 +22,42 @@ section.about
 		.row
 			.col-xl-3.about-card
 				.about-card__icon
-					.about-card__icon-layer-1
-						.about-card__icon-layer-2
-							img(src="img/icons/flat-design.png", alt="flat-design")
+					include ../../img/icons/hexagon-hollow.svg
+					img.about-card__image-usual(src="img/icons/flat-design.png", alt="flat-design")
+					img.about-card__image-hover(src="img/icons/flat-design-hover.png", alt="flat-design-hover")
+					//- img(src="img/icons/hexagon-hollow.svg", alt="hexagon-hollow")
+					//- .about-card__icon-layer-1
+					//- 	.about-card__icon-layer-2
 				h4.about-card__title FLAT DESIGN
-				p.about-card__content Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+				.about-card__content
+					p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			.col-xl-3.about-card
+				.about-card__icon
+					include ../../img/icons/hexagon-hollow.svg
+					img.about-card__image-usual(src="img/icons/retina-ready.png", alt="/retina-ready")
+					img.about-card__image-hover(src="img/icons/retina-ready-hover.png", alt="retina-ready-hover")
+				h4.about-card__title RETINA READY
+				.about-card__content
+					p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			.col-xl-3.about-card
+				.about-card__icon
+					include ../../img/icons/hexagon-hollow.svg
+					img.about-card__image-usual(src="img/icons/responsive.png", alt="responsive")
+					img.about-card__image-hover(src="img/icons/responsive-hover.png", alt="responsive-hover.png")
+				h4.about-card__title RESPONSIVE
+				.about-card__content
+					p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			.col-xl-3.about-card
+				.about-card__icon
+					include ../../img/icons/hexagon-hollow.svg
+					img.about-card__image-usual(src="img/icons/clean-useful.png", alt="clean-useful")
+					img.about-card__image-hover(src="img/icons/clean-useful-hover.png", alt="clean-useful-hover")
+				h4.about-card__title Clean & useful
+				.about-card__content
+					p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			//- .col-xl-3.about-card
+			//- 	+about-card("flat-design.png", "flat-design-hover.png", "FLAT DESIGN", "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet")

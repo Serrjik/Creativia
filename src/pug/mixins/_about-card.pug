@@ -1,0 +1,8 @@
+mixin about-card(image-usual, image-hover, title, content)
+	.about-card__icon
+		include ../../img/icons/hexagon-hollow.svg
+		img.about-card__image-usual(src="img/icons/#{image-usual}")
+		img.about-card__image-hover(src="img/icons/#{image-hover}")
+	h4.about-card__title= title
+	.about-card__content
+		p= content

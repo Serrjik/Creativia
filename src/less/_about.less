@@ -1,6 +1,6 @@
 .about {
 	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-bottom: 90px;
 	text-align: center;
 }
 
@@ -90,6 +90,7 @@
 .about-photos {
 	width: 100%;
 	height: 360px;
+	// background-color: #ffe4c4;
 	
 	background-image: url("../img/about-center.png"), 
 					url("../img/about-right.png"),
@@ -100,50 +101,64 @@
 }
 
 .about-card {
-	width: 100%;
-	height: 300px;
-	background-color: #ffe4c4;
-	padding: 6px;
+	// background-color: red;
+	padding: 7px;
+	text-align: center;
+}
+
+.about-card:hover .about-card__icon .svg-path {
+	fill: #ff0036;
 }
 
 .about-card__icon {
-	width: 41px;
-	height: 76px;
-	background-color: #ff0036;
-	border: none;
-	border-top: 1px solid #262626;
-	border-bottom: 1px solid #262626;
-	transform: rotate(120deg);
+	position: relative;
+	// background-image: url("../img/icons/flat-design.png");
+	// background-repeat: no-repeat;
+	// background-position: center center;
+	// background-size: auto;
+	// background-color: transparent;
 }
 
-.about-card__icon-layer-1 {
-	width: 100%;
-	height: 100%;
-	background-color: #ff0036;
-	border: inherit;
-	transform: rotate(-60deg);
+.about-card__icon img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	// margin-right: auto;
+	// margin-left: auto;
+} 
+
+.about-card__image-usual {
+	display: block;
 }
 
-.about-card__icon-layer-2 {
-	width: 100%;
-	height: 100%;
-	background-color: #ff0036;
-	border: inherit;
-	transform: rotate(-60deg);
+.about-card__image-hover {
+	display: none;
+}
+
+.about-card:hover .about-card__image-usual {
+	display: none;
+}
+
+.about-card:hover .about-card__image-hover {
+	display: block;
 }
 
 .about-card__title {
+	color: #262626;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 500;
-	color: #262626;
 	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 20px;
+	margin-top: 35px;
+	margin-bottom: 25px;
 }
 
 .about-card__content {
-	.paragraph;
-	.paragraph--regular;
+	color: #505050;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.38;
 }
