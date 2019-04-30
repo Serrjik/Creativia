@@ -38,9 +38,52 @@
 }
 
 .portfolio__item {
+	position: relative;
 	width: 300px;
 	height: 350px;
 	vertical-align: bottom;
+}
+
+.portfolio__item--hover {
+	position: absolute;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 157px;
+	background-color: #000;
+	opacity: 0.9;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	line-height: 1.375;
+	text-align: center;
+	transition: all 2s ease-in;
+	
+	&:hover {
+		display: block;
+		transition: all 2s ease-in;
+	}
+}
+
+.portfolio__item:hover .portfolio__item--hover {
+		display: block;
+}
+
+.portfolio__plus {
+	margin-bottom: 25px;
+}
+
+.portfolio__item .fas {
+	font-size: 27px;
+}
+
+.design_name {
+  position: absolute;
+  left: 506.422px;
+  top: 2371.268px;
+  z-index: 757;
 }
 
 .portfolio__item img {
