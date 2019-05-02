@@ -79,11 +79,44 @@
 }
 
 .features__mockups {
-	// width: 372px;
-	height: 488px;
+	position: relative;
+	height: 585px;
 	padding: 3px;
+
+	&:before {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		content: "";
+		width: 474px;
+		height: 412px;
+		z-index: 1;
+		background: url("../img/features/hexagon-background.svg") center bottom no-repeat;
+		transform: translate(-50%);
+	}
+	
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		content: "";
+		width: 473px;
+		height: 205.5px;
+		z-index: 3;
+		background: url("../img/features/hexagon-bottom.svg") center bottom no-repeat;
+		transform: translate(-50%);
+	}
+}
+
+.features__phone {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 366px;
+	height: 406px;
 	box-shadow: 0 0 76px rgba(0, 0, 0, 0.15);
 	background-color: #d8d8d8;
-	background-image: linear-gradient(to top, #c7c7c7 0%, #e7e7e7 100%);
 	border-radius: 31px;
+	z-index: 2;
 }
