@@ -1,5 +1,5 @@
 .clients {
-	height: 652px;
+	// height: 652px;
 	padding-top: 90px;
 	padding-bottom: 100px;
 	background-image: 
@@ -13,8 +13,8 @@
 }
 
 .reviews {
-	height: 300px;
-	background-color: #6fc;
+	height: 272px;
+	// background-color: #6fc;
 }
 
 .review__title {
@@ -42,6 +42,7 @@
 }
 
 .review__client-photo {
+	margin-bottom: 17px;
 	// overflow: hidden;
 }
 
@@ -63,7 +64,7 @@
 .hexagon-layer-1 {
 	width: 100%;
 	height: 100%;
-	background-color: #ff0036;
+	background-color: #3cf;
 	border: none;
 	transform: rotate(-60deg);
 	// overflow: hidden;
@@ -73,23 +74,93 @@
 .hexagon-layer-2 {
 	width: 100%;
 	height: 100%;
-	background-color: #ff0036;
+	background-color: #093;
 	border: none;
 	transform: rotate(-60deg);
 	// overflow: hidden;
 	// visibility: hidden;
 	
-	background-image: url("../img/clients/amr-srour.jpg");
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: center;
+	// background-image: url("../img/clients/amr-srour.jpg");
+	// background-size: auto;
+	// background-repeat: no-repeat;
+	// background-position: center;
 }
 
-// .about-card__icon img {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   -webkit-transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   transform: translate(-50%, -50%);
-// }
+.about-card__icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.review__client-name {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: bold;
+	color: #ff0036;
+	text-transform: uppercase;
+	margin-bottom: 28px;
+}
+
+.reviews-dots {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+}
+
+.reviews-dot {
+	background-color: #e0e0e0;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+	margin-right: 5px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.reviews-dot--active {
+	background-color: #ff0036;
+}
+
+.badges {
+}
+
+.badges .row .col-xl-6:first-of-type .badge {
+	margin-bottom: 39px;
+}
+
+.badge {
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	    -webkit-flex-grow: none;
+	            flex-grow: none;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #fff;
+	box-shadow: inset 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
+	height: 116px;
+	font-family: 'mgopen_modata', sans-serif;
+	font-size: 24px;
+	line-height: 1;
+	color: #292626;
+	// text-align: left;
+	// -moz-transform: matrix( 1.64352564724454,0,0,1.6442548068041,0,0);
+	// -webkit-transform: matrix( 1.64352564724454,0,0,1.6442548068041,0,0);
+	// -ms-transform: matrix( 1.64352564724454,0,0,1.6442548068041,0,0);
+}
+
+.badge img {
+	margin-right: 10px;
+}
