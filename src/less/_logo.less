@@ -1,70 +1,28 @@
-// .logo {
-// 	position: relative;
-// 	display: block;
-// 	width: 251px;
-// 	height: 42px;
-// 	border-left: 2px solid #ff0036;
-// 	border-right: 2px solid #ff0036;
-// 	background-color: #131313;
-// 	cursor: pointer;
-
-// 	&:before {
-// 		position: absolute;
-// 		bottom: -53px;
-// 		right: 133px;
-// 		content: "";
-// 		width: 92px;
-// 		height: 100px;
-// 		border-left: 2px solid #ff0036;
-// 		background-color: #131313;
-// 		transform: rotate(-45deg);
-// 	}
-
-// 	&:after {
-// 		position: absolute;
-// 		bottom: -53px;
-// 		left: 133px;
-// 		content: "";
-// 		width: 92px;
-// 		height: 100px;
-// 		border-right: 2px solid #ff0036;
-// 		background-color: #131313;
-// 		transform: rotate(45deg);
-// 	}
-// }
-
 .logo {
 	position: relative;
 	display: block;
 	width: 251px;
-	height: 113px;
-	// background-color: #131313;
-	background-color: #ff0036;
+	height: 106px;
 	cursor: pointer;
-	// border: 2px solid #ff0036;
-	clip-path: polygon(0 0, 100% 0, 100% 40px, 186px 100%);
+	background-color: #ff0036;
+	clip-path: polygon(0 0, 100% 0, 100% 37.74%, 73.71% 100%, 25.5% 100%, 0 37.74%);
 	
-}
-
-.logo__title {
-	position: absolute;
-	left: 65px;
-	top: 40px;
-	z-index: 5;
-	
-	&:after {
+	&:before {
 		position: absolute;
-		bottom: -50px;
-		left: 4px;
 		display: block;
 		content: "";
-		width: 107px;
-		height: 100px;
-		border-bottom: 2px solid #ff0036;
+		width: 247px;
+		height: 104px;
+		top: 0;
+		left: 2px;
+		clip-path: polygon(0 0, 100% 0, 100% 37.74%, 73.71% 100%, 25.5% 100%, 0 37.74%);
 		background-color: #131313;
-		z-index: -4;
 	}
 }
 
 .logo-image {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 40px;
 }
