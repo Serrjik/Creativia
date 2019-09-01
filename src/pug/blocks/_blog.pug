@@ -4,15 +4,30 @@
 			span.title--black our 
 			span.title--red Blog
 		.paragraph.mb-95.t-center Lorem ipsum dolor sit amet, consectetur #[span.paragraph--red adipiscing elit.] Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
-		.row
+
+		.row.mb-40
 			.blog-card
 				.row
 					img(src="img/posts/post-one.jpg", alt="post-one").col-xl-4.offset-xl-1.blog-card__image
 					.col-xl-6.blog-card__content
 						h4.blog-card__title Lorem ipsum dolor sit amet, consectetur
 						.blog-card__notifications
-							a(href="#").blog-card__notification.blog-card__notification__admin admin
-							a(href="#").blog-card__notification.blog-card__notification__comments 1205
-							a(href="#").blog-card__notification.blog-card__notification__views 1205
+							.blog-card__notification.blog-card__notification__user <i class="fas fa-user"></i>admin
+							.blog-card__notification.blog-card__notification__comments <i class="fas fa-comment"></i>1205
+							.blog-card__notification.blog-card__notification__views <i class="far fa-eye"></i>1205
 						.paragraph.paragraph--regular.pb-25 Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...
 						a(href="#").blog-card__button view more
+
+			.blog-card
+				.row
+					img(src="img/posts/post-two.jpg", alt="post-one").col-xl-4.offset-xl-1.blog-card__image
+					.col-xl-6.blog-card__content
+						h4.blog-card__title Lorem ipsum dolor sit amet, consectetur
+						.blog-card__notifications
+							.blog-card__notification.blog-card__notification__user <i class="fas fa-user"></i>admin
+							.blog-card__notification.blog-card__notification__comments <i class="fas fa-comment"></i>1205
+							.blog-card__notification.blog-card__notification__views <i class="far fa-eye"></i>1205
+						.paragraph.paragraph--regular.pb-25 Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...
+						a(href="#").blog-card__button view more
+
+		button.load-more <i class="fas fa-angle-down"></i>
