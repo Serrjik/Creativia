@@ -13,11 +13,20 @@
 				| Phone: +0201091915171<br>
 				| Email: gfx3mr@gmail.com<br>
 
-			form.form(action="#")
+			form.form(id="form", action="#")
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Мой персональный сайт">
+				<input type="hidden" name="form_from" value="admin@serjik.zzz.com.ua">
+				<input type="hidden" name="admin_email" value="uac.sarge@gmail.com">
+				<input type="hidden" name="form_subject" value="Обратная связь">
+				<!-- // Hidden Required Fields -->
+
 				h4.form__title send message
-				input(placeholder="Name").form__input.mb-15
-				input(placeholder="Email").form__input.mb-17
-				input(placeholder="subject").form__input.mb-21
-				textarea.form__message
+				input(type="text", placeholder="Name", name="name", required).form__input.mb-15
+				input(type="text", placeholder="Email", name="email", required).form__input.mb-17
+				input(type="text", placeholder="subject", name="subject", required).form__input.mb-21
+				textarea(name="message", required).form__message
 				input(type="submit", value="submit").form__submit
+
+			div#answer
 
