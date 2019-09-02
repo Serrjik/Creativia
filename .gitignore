@@ -13,7 +13,7 @@
 *.sublime-workspace
 node_modules/
 app/bower/
-build/
+# build/
 dist/
 .tmp/
 .idea
