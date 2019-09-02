@@ -5,4 +5,19 @@
 			span.title--red here
 		.paragraph.mb-95.t-center Lorem ipsum dolor sit amet, consectetur #[span.paragraph--red adipiscing elit.] Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
 
-	.map
+	.map(id="egypt-map")
+		.find__overlay
+			.find__balloon
+				| egypt, creativia<br>
+				| Address: cairo 123<br>
+				| Phone: +0201091915171<br>
+				| Email: gfx3mr@gmail.com<br>
+
+			form.form(action="#")
+				h4.form__title send message
+				input(placeholder="Name").form__input.mb-15
+				input(placeholder="Email").form__input.mb-17
+				input(placeholder="subject").form__input.mb-21
+				textarea.form__message
+				input(type="submit", value="submit").form__submit
+
