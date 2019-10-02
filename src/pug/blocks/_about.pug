@@ -1,0 +1,60 @@
+section.about#about
+	.container
+		h2.title.mb-30.mb-md-40
+			span.title--black about 
+			span.title--red creativia
+		.paragraph.mb-30.mb-md-95 Lorem ipsum dolor sit amet, consectetur #[span.paragraph--red adipiscing elit.] Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+		.row.mb-40.mb-md-110
+			.col-lg-6
+				.about__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae,
+				.accordion
+					.accordion__item.accordion__item--active
+						h3.accordion__title Hwo is creativia
+						p.accordion__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+					.accordion__item
+						h3.accordion__title Experiences
+						p.accordion__content Systemic stimulate bridge fluidity apophenia weathered carbon wonton soup dome Tokyo saturation point assassin free-market vinyl. Shrine film bicycle nano-semiotics drone city concrete DIY shanty town saturation point tanto cyber-network long-chain hydrocarbons monofilament.
+					.accordion__item
+						h3.accordion__title Learn more
+						p.accordion__content Shoes BASE jump A.I. knife hotdog artisanal geodesic corporation. Ablative euro-pop towards nodality warehouse hotdog pistol convenience store neural voodoo god long-chain hydrocarbons weathered sprawl. Carbon dead claymore mine semiotics systemic sign 8-bit tower otaku.
+			.col-lg-6.about__photos
+		.scrollbar.mb-40.mb-md-100
+		.row
+			.col-6.col-md-3.about-card
+				.about-card__icon
+					include ../../img/icons/hexagon-hollow.svg
+					img.about-card__image-usual(src="img/icons/flat-design.png", alt="flat-design")
+					img.about-card__image-hover(src="img/icons/flat-design-hover.png", alt="flat-design-hover")
+				h4.about-card__title FLAT DESIGN
+				.about-card__content
+					p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			//- .col-6.col-md-3.about-card
+			//- 	.about-card__icon
+			//- 		include ../../img/icons/hexagon-hollow.svg
+			//- 		img.about-card__image-usual(src="img/icons/retina-ready.png", alt="/retina-ready")
+			//- 		img.about-card__image-hover(src="img/icons/retina-ready-hover.png", alt="retina-ready-hover")
+			//- 	h4.about-card__title RETINA READY
+			//- 	.about-card__content
+			//- 		p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			//- .col-6.col-md-3.about-card
+			//- 	.about-card__icon
+			//- 		include ../../img/icons/hexagon-hollow.svg
+			//- 		img.about-card__image-usual(src="img/icons/responsive.png", alt="responsive")
+			//- 		img.about-card__image-hover(src="img/icons/responsive-hover.png", alt="responsive-hover.png")
+			//- 	h4.about-card__title RESPONSIVE
+			//- 	.about-card__content
+			//- 		p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			//- .col-6.col-md-3.about-card
+			//- 	.about-card__icon
+			//- 		include ../../img/icons/hexagon-hollow.svg
+			//- 		img.about-card__image-usual(src="img/icons/clean-useful.png", alt="clean-useful")
+			//- 		img.about-card__image-hover(src="img/icons/clean-useful-hover.png", alt="clean-useful-hover")
+			//- 	h4.about-card__title Clean & useful
+			//- 	.about-card__content
+			//- 		p Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+
+			.col-6.col-md-3.about-card
+				+about-card("clean-useful.png", "clean-useful-hover.png", "FLAT DESIGN", "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet")

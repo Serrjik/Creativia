@@ -1,0 +1,163 @@
+.portfolio {
+	background-color: #262626;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+	@media(min-width: 768px) {
+		padding-top: 95px;
+		padding-bottom: 105px;
+	}
+}
+
+.portfolio__filter {
+	text-align: center;
+	margin-bottom: 30px;
+	text-decoration: none;
+	list-style-type: none;
+	
+	@media(min-width: 768px) {
+		margin-bottom: 95px;
+	}
+}
+
+.portfolio__category {
+	display: block;
+	color: #a4a4a4;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.375;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-bottom: 10px;
+	cursor: pointer;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+	
+	&:hover,
+	&--active {
+		color: #ff0036;
+	}
+	
+	@media(min-width: 576px) {
+		display: inline;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+}
+
+.portfolio__wrapper {
+	// background-color: #95a5a5;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+	
+	@media(min-width: 400px) {
+		width: 400px;
+	}
+
+	@media(min-width: 800px) {
+		width: 800px;
+	}
+
+	@media(min-width: 1400px) {
+		width: 1400px;
+	}
+}
+
+.portfolio__item {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	vertical-align: bottom;
+	
+	@media(min-width: 800px) {
+		width: 400px;
+	}
+
+	@media(min-width: 1400px) {
+		width: 300px;
+	}
+}
+
+.portfolio__item--hover {
+	position: absolute;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 157px;
+	background-color: #000;
+	opacity: 0.9;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	line-height: 1.375;
+	text-align: center;
+	transition: all 2s ease-in;
+	
+	&:hover {
+		display: block;
+		transition: all 2s ease-in;
+	}
+}
+
+.portfolio__item:hover .portfolio__item--hover {
+	display: block;
+}
+
+.portfolio__plus {
+	margin-bottom: 25px;
+}
+
+.portfolio__item .fas {
+	font-size: 27px;
+}
+
+.portfolio__item img {
+	margin-left: auto;
+}
+
+.portfolio__item--wide {
+	width: 400px;
+}
+
+.portfolio__item--jaffa {
+	background-color: #f39943;
+}
+
+.portfolio__item--astral {
+	background-color: #3782aa;
+}
+
+.portfolio__item--french-rose {
+	background-color: #ef5d88;
+}
+
+.portfolio__item--quarter-spanish-white {
+	background-color: #f6f0e0;
+}
+
+.portfolio__item--emerald {
+	background-color: #56cc82;
+}
+
+.portfolio__item--pewter {
+	background-color: #95a5a5;
+}
+
+.portfolio__item--java {
+	background-color: #24b0c9;
+}
+.portfolio__item--salmon {
+	background-color: #fa8562;
+}
+
+// Скрыть элементы в контейнере с фильтром для работы плагина Mixitup
+#portfolio-projects .mix {
+	display: none;
+}

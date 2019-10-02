@@ -1,0 +1,41 @@
+.follow {
+	position: relative;
+	background-color: #262626;
+	background-image: url("../img/bg/follow-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	
+	@media(@large-width) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@media(@extra-large-width) {
+		padding-top: 95px;
+		padding-bottom: 90px;
+	}
+}
+
+.follow:before {
+	content: "1";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0;
+	transition: 0.25s ease-in;
+}
+
+.follow:hover:before {
+	opacity: 0.9;
+}
+
+.follow__inner {
+	position: relative;
+	z-index: 3;
+}

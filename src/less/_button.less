@@ -1,0 +1,40 @@
+.button {
+	width: 150px;
+	background-color: #ff0036;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	text-align: center;
+	padding: 14px 15px;
+	transition: background-color 0.25s ease-in;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #131313;
+	}
+	
+	@media(@small-width) {
+		width: 170px;
+		font-size: 20px;
+		padding: 17px 15px;
+	}
+}
+
+.button--black {
+	background-color: #131313;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #ff0036;
+	}
+}
+
+.button--gray {
+  background-color: #393939;
+}

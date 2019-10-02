@@ -1,0 +1,48 @@
+.tweet {
+	background-color: #272727;
+	text-align: center;
+}
+
+.tweet__wrapper {
+	max-width: 1320px;
+
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+	@media(@medium-width) {
+		background-image: url("../img/bg/twitter.svg");
+		background-repeat: no-repeat;
+		background-size: 121px 136px;
+		background-position: left bottom;
+	}
+	
+	@media(@large-width) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@media(@extra-large-width) {
+		background-size: auto;
+		padding-top: 100px;
+		padding-bottom: 90px;
+	}
+}
+
+.tweet__icon {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+.tweet__text {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.38;
+	font-weight: 400;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
