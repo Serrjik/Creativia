@@ -1,8 +1,9 @@
 mixin aboutCard(imageUsual, imageHover, title, content)
-	.about-card__icon
-		include ../../img/icons/hexagon-hollow.svg
-		img.about-card__image-usual(alt='', src=`img/icons/${imageUsual}`)
-		img.about-card__image-hover(alt='', src=`img/icons/${imageHover}`)
-	h4.about-card__title= title
-	.about-card__content
-		p= content
+	.about-card&attributes(attributes)
+		.about-card__icon
+			include ../../img/icons/hexagon-hollow.svg
+			img.about-card__image-usual(alt='', src=`img/icons/${imageUsual}`)
+			img.about-card__image-hover(alt='', src=`img/icons/${imageHover}`)
+		h4.about-card__title= title
+		.about-card__content
+			p= content
