@@ -1,0 +1,7 @@
+mixin portfolioItem(image, href, designName)
+	.portfolio__item&attributes(attributes)
+		img(src=`img/portfolio/${image}`,alt=`${image}`)
+		a.portfolio__item--hover(href=`${href}`)
+			.portfolio__plus
+				i.fas.fa-plus
+			span= designName
